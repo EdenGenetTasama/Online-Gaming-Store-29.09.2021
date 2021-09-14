@@ -1,0 +1,13 @@
+
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+#categoryInput{
+    text-align: center;
+    font-size: 30px;
+    width: 30%;
+    height: 30%;
+}
