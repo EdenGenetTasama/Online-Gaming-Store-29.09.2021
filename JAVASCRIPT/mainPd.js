@@ -13,10 +13,11 @@ function sortedProductsFun(htmlElement , arrayOfItems , selectCategory) {
         htmlElement.innerHTML += `<article
         class="item"
         id=${arrayOfItems[i].id}>
-        ${arrayOfItems[i].name}
-        ${arrayOfItems[i].description} 
-        ${arrayOfItems[i].price}
-        ${arrayOfItems[i].price}
+        <img src=${arrayOfItems[i].img[0]} id="designImgInside"></n>
+        <h4>Name: </h4>${arrayOfItems[i].name} 
+        <h5>Description: ${arrayOfItems[i].description}</h5>
+        Price:${arrayOfItems[i].price}<br></style>
+        <button type="button">ADD</button>
         </article>`
      }
     }
@@ -28,9 +29,9 @@ function cleanItems(HtmlElement) {
     HtmlElement.innerHTML = '';
 }
 
-categoryInput.addEventListener('change', function (e){
-    const selectedValue = e.targe.value;
+categoryInput.addEventListener('change', function (event){
+    const selectedValue = event.target.value;
     cleanItems(itemsContainer);
-    sortedProductsFun(selectedValue, allDateItem, userValue);
+    sortedProductsFun(itemsContainer, allDateItem, selectedValue);
 })
 

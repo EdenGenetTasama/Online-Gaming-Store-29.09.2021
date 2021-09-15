@@ -1,5 +1,5 @@
 var allDateItem = [
-    {id: 1, category: "video game" ,  name:"Far Country, The" , description: "tellus in sagittis dui vel nisl",price: 75, img:["http://dummyimage.com/x.png/cc0000/ffffff", "http://dummyimage.com/x.png/5fa2dd/ffffff"]},
+    {id: 1, category: "video game" ,  name:"Far Country" , description: "tellus in sagittis dui vel nisl",price: 75, img:["http://dummyimage.com/x.png/cc0000/ffffff", "http://dummyimage.com/x.png/5fa2dd/ffffff"]},
     {id: 2, category: "video game" ,  name:"Swimming with Sharks" , description: "mi nulla ac enim in",price:118 , img:["http://dummyimage.com/x.png/ff4444/ffffff", "http://dummyimage.com/x.png/5fa2dd/ffffff"]},
     {id: 3, category: "video game" ,  name: "OMG Oh My God!", description: "quisque arcu libero rutrum ac lobortis",price: 25, img:["http://dummyimage.com/x.png/cc0000/ffffff", "http://dummyimage.com/x.png/5fa2dd/ffffff"]},
     {id: 4, category: "video game" ,  name: "Adventures of a Dentist", description: "tellus in sagittis dui vel nisl" ,price:50 , img:["http://dummyimage.com/x.png/5fa2dd/ffffff", "http://dummyimage.com/x.png/cc0000/ffffff"]},

@@ -1,8 +1,7 @@
 
+#mainSectionStyle{
+    text-align: center;    
 
-main{
-    display: flex;
-    justify-content: center;
 }
 
 #categoryInput{
@@ -10,4 +9,24 @@ main{
     font-size: 30px;
     width: 30%;
     height: 30%;
+}
+
+.item{
+    width: 350px;
+    height: 400px;
+    border: 2px solid blue;
+    padding: 3% !important;
+}
+
+#itemsContainer{
+    display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin:5%;
+  
+}
+
+#designImgInside{
+    width: 150px;
+    height: 150px;
 }
