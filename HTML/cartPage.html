@@ -1,30 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart page</title>
     <link rel="stylesheet" href="../STYLE/style.css">
+    <link rel="stylesheet" href="../STYLE/cartStyle.css">
 </head>
+
 <body>
     <header>
         <ul class="menu">
             <li><a href="./index.html">Home Page</a></li>
             <li><a href="./pagesHtml.html">Products</a></li>
             <li><a href="./cartPage.html" class="active">Shopping cart</a></li>
-            <li><a href="#">Content Us!</a></li>
+            <li><a href="" id="userRegister">Register now</a></li>
             <li class="slider"></li>
 
-          </ul>
+        </ul>
     </header>
 
 
     <main>
-      <h1>Shop cart</h1>
-      <div id="conteinerDivOfCart">
-          
-      </div>
+        <h1>Shop cart</h1>
+        <div id="conteinerDivOfCart">
+            <table id="tableID">
+                <tr class="firstLineInTable">
+                    <th></th>
+                    <th>Product</th>
+                    <th>Amount</th>
+                    <th>Price</th>
+
+                </tr>
+                <tr class="firstLineInTable">
+                    <td> <button type="button">REMOVE</button></td>
+                    <td><img src="http://www.yo-yoo.co.il/coolpics/images/uploads/loveityoyo3.jpg" id="tableImg"></td>
+                    <td>big red heart</td>
+                    <td>100.10</td>
+                </tr>
+                <tr class="firstLineInTable">
+                    <td> <button type="button">REMOVE</button></td>
+                    <td><img src="http://www.yo-yoo.co.il/coolpics/images/uploads/loveityoyo3.jpg" id="tableImg"></td>
+                    <td>big red heart</td>
+                    <td>100.10</td>
+                </tr>
+                <tr class="firstLineInTable">
+                    <td> <button type="button">REMOVE</button></td>
+                    <td><img src="http://www.yo-yoo.co.il/coolpics/images/uploads/loveityoyo3.jpg" id="tableImg"></td>
+                    <td>big red heart</td>
+                    <td>100.10</td>
+                </tr>
+
+
+            </table>
+            <div>Total Price: </div>
+        </div>
 
 
 
@@ -32,10 +64,17 @@
     </main>
 
     <footer></footer>
-    
 
+    <script>
+        userRegister.onclick = () => {
+          var url = "http://127.0.0.1:5501/HTML/form.html";
+          var windowForm = window.open(url, '_blank', 'location=yes,height=500,width=500,scrollbars=yes,status=no');
+        }
+    
+      </script>
     <script src="../JAVASCRIPT/mainPd.js"></script>
     <script src="../JAVASCRIPT/productsMock.js"></script>
     <script src="../JAVASCRIPT/cartPage.js"></script>
 </body>
+
 </html>

@@ -1,7 +1,7 @@
-// allDateItem
+// function Item(name, price, count) {
+//     this.name = name;
+//     this.price = price;
+//     this.count = count;
+//   }
 
-for (let i = 0; i < allDateItem.length; i++) {
-    addButton.addEventListener('click' ,()=>{
-        console.log("clicked");
-    })
-}
+//   console.log(Item("eden",200 , 2));

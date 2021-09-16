@@ -2,54 +2,70 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main page</title>
-    <link rel="stylesheet" href="../STYLE/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main page</title>
+  <link rel="stylesheet" href="../STYLE/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <header>
-            <ul class="menu">
-              <li><a href="./index.html" class="active">Home Page</a></li>
-              <li><a href="./pagesHtml.html">Products</a></li>
-              <li><a href="./cartPage.html">Shopping cart</a></li>
-              <li><a href="#">Content Us!</a></li>
-              <li class="slider"></li>
+  <header>
+    <ul class="menu">
+      <li><a href="./index.html" class="active">Home Page</a></li>
+      <li><a href="./pagesHtml.html">Products</a></li>
+      <li><a href="./cartPage.html">Shopping cart</a></li>
+      <li><a href="" id="userRegister">Register now</a></li>
+      <li class="slider"></li>
 
-            </ul>
-    </header>
+    </ul>
+  </header>
 
-    <main>
+  <main>
 
-      <h1>Welcome To Fun World !</h1>
-<div id="firstPartPage">
-      <!-- <video id="videoOnFirstPage" autoplay muted>
-        <source src="../media/Controller - 82663.mp4" type="video/mp4">
-      </video> -->
+    <h1>Welcome To Fun World !</h1>
+    <div id="firstPartPage">
       <img src="../media/Centerstages_Ncom_1366x493_desktop_wario.jfif" id="imgFirstPage"> <br>
       <br>
-      <span id="AvailableNow">Available now</span> <button type="button" id="imageButton">Learn more ></button>
-</div>
+     <a href="../HTML/pagesHtml.html"> <span id="AvailableNow">Available now</span><button type="button" id="imageButton">Learn more ></button></a>
+    </div>
 
 
-<div> 
-  <h2>New products:</h2>
-</div>
+    <h2>New products:</h2>
+    <div class="slider" id="slide">
+      <img src="http://via.placeholder.com/200x200?text=Product1" alt="" class="card">
+      <img src="http://via.placeholder.com/200x200?text=Product3" alt="" class="card">
+      <img src="http://via.placeholder.com/200x200?text=Product3" alt="" class="card">
+      <img src="http://via.placeholder.com/200x200?text=Product2" alt="" class="card">
+      <img src="http://via.placeholder.com/200x200?text=Product2" alt="" class="card">
+      <img src="http://via.placeholder.com/200x200?text=Product3" alt="" class="card">
+      <img src="http://via.placeholder.com/200x200?text=Product2" alt="" class="card">
+      <img src="http://via.placeholder.com/200x200?text=Product2" alt="" class="card">
+      <img src="http://via.placeholder.com/200x200?text=Product1" alt="" class="card">
+      <img src="http://via.placeholder.com/200x200?text=Product1" alt="" class="card">
+      <div id="stopAnimation"></div>
+
+    </div>
+
+  </main>
 
 
-    </main>
+  <footer></footer>
 
 
-    <footer></footer>
+  <script>
+    userRegister.onclick = () => {
+      var url = "http://127.0.0.1:5501/HTML/form.html";
+      var windowForm = window.open(url, '_blank', 'location=yes,height=500,width=500,scrollbars=yes,status=no');
+    }
 
-
-
-    <source src="../JAVASCRIPT/main.js" type="">
+  </script>
+  <script src="../JAVASCRIPT/main.js" type="">
+    <script src="../JAVASCRIPT/userForm.js"></script>
 </body>
 
 </html>

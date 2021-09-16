@@ -25,6 +25,8 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 3px;
     color: white;
+    font-weight: bold;
+    background-color:rgba(0, 0, 0, 0.2);
 }
 
 
@@ -92,10 +94,12 @@ li.slider {
     background-color: #e67e22;
 }
 
-.menu li:nth-child(4):hover, .menu li:nth-child(4):focus, .menu li:nth-child(4):active {
+.menu li:nth-child(1):hover,.menu li:nth-child(4):hover, .menu li:nth-child(4):focus, .menu li:nth-child(4):active {
     left: 75%;
     background-color: #16a085;
 }
+
+
 
 /* #videoOnFirstPage{
     width: 100%;
@@ -111,6 +115,7 @@ li.slider {
 #AvailableNow{
     font-size: 25px;
     font-weight: bold;
+    color: black;
 }
 
 #imageButton{
@@ -127,7 +132,110 @@ border-radius: 8%;
     padding: 10px;
 
 }
-/* 
-#firstPartPage{
+
+.slider {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  .slider::-webkit-scrollbar {
+    display: none;
+  }
+
+  .slider .item {
+    margin-right: 10px;
+  }
+  .slider .item:last-child {
+    margin-right: 0;
+  }
+  
+  .ctrl {
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  .ctrl-btn {
+    padding: 20px 20px;
+    min-width: 50px;
+    background: #fff;
+    border: none;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -27.5px;
+  }
+  
+  .ctrl-btn.pro-prev {
+    left: 0;
+  }
+  
+  .ctrl-btn.pro-next {
+    right: 0;
+  }
+
+
+
+  .slider{
+    display: flex;
+    overflow: hidden;
+ 
+}
+
+.slider .card {
     padding: 10px;
-} */
+    flex-shrink: 0;
+    animation: moveside 10s alternate infinite;
+    animation-delay: s;
+}
+.slider .card img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes moveside {
+    0%{
+        transform: translateX(-0%);
+    }
+    25%{
+        transform: translateX(100%);
+    }
+    50%{
+        transform: translateX(150%);
+    }
+    75%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-0%);
+    }}
+
+    .slider:hover{
+    animation-play-state: paused !important;
+
+} 
+  
+#formID{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width:400px;
+    height: 500px;
+    margin: 5%;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    
+    
+}
+
+
+.formLable{
+    background-color:rgba(0, 0, 0, 0.4);
+    
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../STYLE/style.css">
+    <title>Form</title>
+</head>
+<body>
+    <main>
+        <form type="submit" id="formID">
+            <h2 class="formLable">טופס הרשמה</h2>
+            <label for="text" class="formLable">First Name:</label>
+            <input type="text" value="" id="firstName" required>
+            <br>
+            <label for="text" class="formLable">Last Name:</label>
+            <input type="text" value="" id="lasttName">
+            <br>
+            <!-- <label for="text" class="formLable">תאריך לידה:</label>
+            <input type="date" value="" id="birthdayDate"> -->
+           
+            <label for="text" class="formLable">Mail:</label>
+            <input type="email" value="" id="userEmail">
+            <br>
+            <label for="password" class="formLable">Password</label>
+            <input type="password" value=""  id="userPassword" minlength="6" maxlength = "15" >
+            <br>
+            <label for="password" class="formLable">Confirm Password:</label>
+            <input type="password" value="" id="userPasswordConfirm">
+            <br>
+            <button type="button" id="sendButton">Send</button>
+
+        </form>
+    </main>
+    
+    <script src="../JAVASCRIPT/userForm.js"></script>
+</body>
+</html>

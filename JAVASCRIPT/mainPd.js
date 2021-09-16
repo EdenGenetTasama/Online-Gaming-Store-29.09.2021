@@ -17,8 +17,8 @@ function sortedProductsFun(htmlElement , arrayOfItems , selectCategory) {
         <img src=${arrayOfItems[i].img[counterImg]} id="designImgInside"></n>
         <h4>Name: </h4>${arrayOfItems[i].name} 
         <h5>Description: ${arrayOfItems[i].description}</h5>
-        Price:${arrayOfItems[i].price}<br></style>
-        <button type="button" id="addButton">ADD</button>
+        Price:${arrayOfItems[i].price}<br>
+        <button type="button" id="addButton">ADD</button></style>
         </article>`;
         // counterImg++
      }
@@ -27,13 +27,15 @@ function sortedProductsFun(htmlElement , arrayOfItems , selectCategory) {
 
 
 
+
 function cleanItems(HtmlElement) {
     HtmlElement.innerHTML = '';
 }
 
 categoryInput.addEventListener('change', function (event){
-    const selectedValue = event.target.value;
+    let selectedValue = event.target.value;
     cleanItems(itemsContainer);
     sortedProductsFun(itemsContainer, allDateItem, selectedValue);
 })
+
 
