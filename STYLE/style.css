@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
     text-align: center;
-
 }
 
 @import url(https://fonts.googleapis.com/css?family=PT+Sans);
@@ -14,10 +13,11 @@ body {
     font-family: 'Alfa Slab One', cursive;
     font-family: 'Luckiest Guy', cursive;
     /* background-image: url('../media/mario.jpg'); */
-    background-image: url('https://cdn.pixabay.com/photo/2016/07/30/21/37/mario-1558063_960_720.jpg') ;
+    background-image: url('https://cdn.pixabay.com/photo/2016/07/30/21/37/mario-1558063_960_720.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;}
+    background-attachment: fixed;
+}
 
 h1 {
     text-align: center;
@@ -26,9 +26,8 @@ h1 {
     letter-spacing: 3px;
     color: white;
     font-weight: bold;
-    background-color:rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
 }
-
 
 .menu {
     list-style: none;
@@ -84,22 +83,20 @@ li.slider {
     background-color: #3498db;
 }
 
-.menu li:nth-child(1):hover , .colorOFMain:hover , .menu li:nth-child(2):hover, .menu li:nth-child(2):focus, .menu li:nth-child(2):active {
+.menu li:nth-child(1):hover, .colorOFMain:hover, .menu li:nth-child(2):hover, .menu li:nth-child(2):focus, .menu li:nth-child(2):active {
     left: 0%;
     background-color: #9b59b6;
 }
 
-.menu li:nth-child(1):hover,.menu li:nth-child(3):hover, .menu li:nth-child(3):focus, .menu li:nth-child(3):active {
+.menu li:nth-child(1):hover, .menu li:nth-child(3):hover, .menu li:nth-child(3):focus, .menu li:nth-child(3):active {
     left: 50%;
     background-color: #e67e22;
 }
 
-.menu li:nth-child(1):hover,.menu li:nth-child(4):hover, .menu li:nth-child(4):focus, .menu li:nth-child(4):active {
+.menu li:nth-child(1):hover, .menu li:nth-child(4):hover, .menu li:nth-child(4):focus, .menu li:nth-child(4):active {
     left: 75%;
     background-color: #16a085;
 }
-
-
 
 /* #videoOnFirstPage{
     width: 100%;
@@ -107,30 +104,28 @@ li.slider {
     margin-top: 20px;
 } */
 
-#imgFirstPage{
+#imgFirstPage {
     width: 98vw;
     height: auto;
 }
 
-#AvailableNow{
+#AvailableNow {
     font-size: 25px;
     font-weight: bold;
     color: black;
 }
 
-#imageButton{
+#imageButton {
     font-size: 30px;
-border-radius: 8%;
+    border-radius: 8%;
     background-color: crimson;
     color: white;
     padding: 10px;
-
 }
 
-#imageButton:hover{
+#imageButton:hover {
     border-bottom: 3px solid white;
     padding: 10px;
-
 }
 
 .slider {
@@ -140,25 +135,26 @@ border-radius: 8%;
     margin: auto;
     overflow-x: scroll;
     overflow-y: hidden;
-  }
+}
 
-  .slider::-webkit-scrollbar {
+.slider::-webkit-scrollbar {
     display: none;
-  }
+}
 
-  .slider .item {
+.slider .item {
     margin-right: 10px;
-  }
-  .slider .item:last-child {
+}
+
+.slider .item:last-child {
     margin-right: 0;
-  }
-  
-  .ctrl {
+}
+
+.ctrl {
     text-align: center;
     margin-top: 5px;
-  }
-  
-  .ctrl-btn {
+}
+
+.ctrl-btn {
     padding: 20px 20px;
     min-width: 50px;
     background: #fff;
@@ -170,22 +166,19 @@ border-radius: 8%;
     position: absolute;
     top: 50%;
     margin-top: -27.5px;
-  }
-  
-  .ctrl-btn.pro-prev {
+}
+
+.ctrl-btn.pro-prev {
     left: 0;
-  }
-  
-  .ctrl-btn.pro-next {
+}
+
+.ctrl-btn.pro-next {
     right: 0;
-  }
+}
 
-
-
-  .slider{
+.slider {
     display: flex;
     overflow: hidden;
- 
 }
 
 .slider .card {
@@ -194,48 +187,72 @@ border-radius: 8%;
     animation: moveside 10s alternate infinite;
     animation-delay: s;
 }
-.slider .card img{
+
+.slider .card img {
     width: 100%;
     height: 100%;
 }
+
 @keyframes moveside {
-    0%{
+    0% {
         transform: translateX(-0%);
     }
-    25%{
+    25% {
         transform: translateX(100%);
     }
-    50%{
+    50% {
         transform: translateX(150%);
     }
-    75%{
+    75% {
         transform: translateX(100%);
     }
-    100%{
+    100% {
         transform: translateX(-0%);
-    }}
+    }
+}
 
-    .slider:hover{
+.slider:hover {
     animation-play-state: paused !important;
+}
 
-} 
-  
-#formID{
+#formID {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width:400px;
+    width: 400px;
     height: 500px;
     margin: 5%;
     font-size: 25px;
     color: white;
     font-weight: bold;
-    
-    
 }
 
+.formLable {
+    background-color: rgba(0, 0, 0, 0.4);
+}
 
-.formLable{
-    background-color:rgba(0, 0, 0, 0.4);
-    
+@media screen and (max-device-width:440px) {
+    .welcomeHeader {
+        font-size: 25px;
+        margin-top: 30px;
+    }
+    .menu {
+        height: 60px;
+    }
+    #AvailableNow {
+        font-size: 20px;
+    }
+    #imageButton {
+        font-size: 12px;
+    }
+    .card {
+        animation-play-state: paused !important;
+        width: 100vw;
+        height: 40vh;
+      
+        
+    }
+  
+
+  
 }

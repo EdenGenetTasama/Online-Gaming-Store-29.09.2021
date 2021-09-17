@@ -30,3 +30,27 @@
     width: 150px;
     height: 150px;
 }
+
+@media screen and (max-device-width:440px){
+    #categoryInput{
+        width: 100vw;
+    }
+}
+@media screen and (max-device-width:720px){
+    #categoryInput{
+        width: 100vw;
+        
+    }
+.welcomeHeader{
+    font-size: 35px;
+}}
+
+@media screen and (max-device-width:1040px){
+    .welcomeHeader{
+        font-size: 40px;
+    }
+    #categoryInput{
+        width: 100vw;
+        
+    }
+}
