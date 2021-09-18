@@ -1,7 +1,8 @@
-// function Item(name, price, count) {
-//     this.name = name;
-//     this.price = price;
-//     this.count = count;
-//   }
+console.log(priceOne);
 
-//   console.log(Item("eden",200 , 2));
+
+// totalPriceId.innerText=`Total Price ${priceOne}`
+
+// buttonRemove.onchange(()=>{
+
+// })
