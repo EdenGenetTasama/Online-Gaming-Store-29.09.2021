@@ -25,6 +25,11 @@ function sortedProductsFun(htmlElement , arrayOfItems , selectCategory) {
     }
 }
 
+let emptyArray = [];
+function clickAddButton(array , select) {
+    
+    emptyArray.push()
+}
 
 
 
@@ -37,5 +42,8 @@ categoryInput.addEventListener('change', function (event){
     cleanItems(itemsContainer);
     sortedProductsFun(itemsContainer, allDateItem, selectedValue);
 })
+
+
+
 
 

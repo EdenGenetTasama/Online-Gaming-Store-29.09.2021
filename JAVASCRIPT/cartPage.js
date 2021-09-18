@@ -1,8 +1,4 @@
-console.log(priceOne);
+// let arrayOfItemCart = [];
 
-
-// totalPriceId.innerText=`Total Price ${priceOne}`
-
-// buttonRemove.onchange(()=>{
-
-// })
+// arrayOfItemCart.push(tr .td);
+// console.log(arrayOfItemCart);
