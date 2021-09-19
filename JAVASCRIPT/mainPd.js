@@ -42,6 +42,8 @@ function cleanItems(HtmlElement) {
     HtmlElement.innerHTML = '';
 }
 
+
+
 categoryInput.addEventListener('change', function (event){
     let selectedValue = event.target.value;
     cleanItems(itemsContainer);

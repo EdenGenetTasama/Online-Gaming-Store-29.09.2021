@@ -1,4 +1,3 @@
-let firstTR = document.getElementById("firstTR");
 
 firstTR.innerHTML = `
 <tr>
@@ -16,30 +15,48 @@ secondTR.innerHTML = `<tr>
 `
 
 thirdTR.innerHTML = `<tr>
-<td><button type="button" id="buttonRemoveTwo">REMOVE</button></td>
+<td><button type="button" id="buttonRemoveThree">REMOVE</button></td>
 <td id= imgFirstTd><img src="http://www.yo-yoo.co.il/coolpics/images/uploads/loveityoyo3.jpg"></td>
 <td>Big red Heart</td>
-<td id="priceTwo">200</td></tr>
+<td id="priceThree">500</td></tr>
 `
 
+let priceOne = document.getElementById("priceOne").innerHTML
+let priceTwo = document.getElementById("priceTwo").innerHTML
+let priceThree = document.getElementById("priceThree").innerHTML
 
-
-let priceOne = document.getElementById("priceOne").innerHTML;
-let priceTwo = document.getElementById("priceTwo").innerHTML;
-let priceThree = document.getElementById("priceThree").innerHTML;
-let buttonRemoveOne = document.getElementById("buttonRemoveOne");
-
-let arrayOfPrice = [priceOne, priceTwo, priceThree];
+let arrayOfPrice=[priceOne,priceTwo,priceThree]
 
 let sum = 0;
-for (let i = 0; i < arrayOfPrice.length; i++) {
-      sum +=  parseInt(arrayOfPrice[i])
+function sumOfPrice(priceOne,priceTwo,priceThree) {
+      for (let i = 0; i < arrayOfPrice.length; i++) {
+                  sum +=  parseInt(arrayOfPrice[i]);
+            }
+           return sum
 }
 
 
-totalPriceId.innerHTML = `<p>Total Price: ${sum}</p>`;
+let variableOfAllPrice = sumOfPrice(sum)
+totalPriceId.innerHTML = `<p>Total Price:<span>${variableOfAllPrice}</span></p>`;
 
+
+let buttonRemoveOne = document.getElementById("buttonRemoveOne")
+console.log(buttonRemoveOne);
+
+function removeItemOfCart(htmlElement) {
+      htmlElement.innerHTML = '';
+
+}
+
+let firstTR1 = document.getElementById("firstTR").innerHTML
+
+// let buttonRemoveTwo = document.getElementById("buttonRemoveTwo").innerHTML
+// let buttonRemoveThree = document.getElementById("buttonRemoveThree").innerHTML
+
+// console.log(firstTR1);
+
+
+/**********************************FOR TOMORROW STUCK HERE  ***********************/
 buttonRemoveOne.onclick(()=>{
-      totalPriceId.innerHTML =`<p>Total Price:${sum-priceOne}</p>`
-      console.log(sum-priceOne);
+      removeItemOfCart(firstTR1)
 })
