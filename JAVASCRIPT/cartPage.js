@@ -27,16 +27,16 @@ let priceThree = document.getElementById("priceThree").innerHTML
 
 let arrayOfPrice=[priceOne,priceTwo,priceThree]
 
-let sum = 0;
-function sumOfPrice(priceOne,priceTwo,priceThree) {
+let sumOfPrices = 0;
+function sumOfPriceFun(priceOne,priceTwo,priceThree) {
       for (let i = 0; i < arrayOfPrice.length; i++) {
-                  sum +=  parseInt(arrayOfPrice[i]);
+            sumOfPrices +=  parseInt(arrayOfPrice[i]);
             }
-           return sum
+           return sumOfPrices
 }
 
 
-let variableOfAllPrice = sumOfPrice(sum)
+let variableOfAllPrice = sumOfPriceFun(sumOfPrices)
 totalPriceId.innerHTML = `<p>Total Price:<span>${variableOfAllPrice}</span></p>`;
 
 
