@@ -18,19 +18,24 @@ function sortedProductsFun(htmlElement , arrayOfItems , selectCategory) {
         <h4>Name: </h4>${arrayOfItems[i].name} 
         <h5>Description: ${arrayOfItems[i].description}</h5>
         Price:${arrayOfItems[i].price}<br>
-        <button type="button" id="addButton">ADD</button></style>
+        <button type="button" id="addButton" onclick="addToCart(${arrayOfItems[i].id})">ADD</button>
         </article>`;
+
         // counterImg++
      }
     }
 }
 
 let emptyArray = [];
-function clickAddButton(array , select) {
-    
-    emptyArray.push()
-}
 
+function addToCart(idOfItem) {
+    for (let i = 0; i < allDateItem.length; i++) {
+        if (allDateItem[i].id==idOfItem ) {
+            emptyArray.push(allDateItem[i])
+            console.log(allDateItem[i]);
+        }
+    }
+}
 
 
 function cleanItems(HtmlElement) {
@@ -42,6 +47,8 @@ categoryInput.addEventListener('change', function (event){
     cleanItems(itemsContainer);
     sortedProductsFun(itemsContainer, allDateItem, selectedValue);
 })
+
+
 
 
 
