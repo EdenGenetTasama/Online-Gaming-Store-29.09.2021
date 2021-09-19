@@ -26,6 +26,8 @@ function sortedProductsFun(htmlElement , arrayOfItems , selectCategory) {
     }
 }
 
+
+
 let emptyArray = [];
 
 function addToCart(idOfItem) {
