@@ -1,10 +1,23 @@
 let arrayOfCartObject = [
-      {id: allDateItem[0].id,img: allDateItem[0].img[0], name:allDateItem[0].name , price:allDateItem[0].price, },
-      {id: allDateItem[1].id, img: allDateItem[1].img[0], name:allDateItem[1].name , price:allDateItem[1].price, },
-      {id: allDateItem[2].id, img: allDateItem[2].img[2], name:allDateItem[2].name , price:allDateItem[2].price, }
-
-]
-
+  {
+    id: allDateItem[0].id,
+    img: allDateItem[0].img[0],
+    name: allDateItem[0].name,
+    price: allDateItem[0].price,
+  },
+  {
+    id: allDateItem[1].id,
+    img: allDateItem[1].img[0],
+    name: allDateItem[1].name,
+    price: allDateItem[1].price,
+  },
+  {
+    id: allDateItem[2].id,
+    img: allDateItem[2].img[2],
+    name: allDateItem[2].name,
+    price: allDateItem[2].price,
+  },
+];
 
 firstTR.innerHTML = `
 
@@ -28,11 +41,11 @@ thirdTR.innerHTML = `
 <td id="priceThree">${arrayOfCartObject[2].price}</td>
 `;
 
-
-
-let arrayOfPrice = [arrayOfCartObject[0].price, arrayOfCartObject[1].price, arrayOfCartObject[2].price];
-
-
+let arrayOfPrice = [
+  arrayOfCartObject[0].price,
+  arrayOfCartObject[1].price,
+  arrayOfCartObject[2].price,
+];
 
 let sumOfPrices = 0;
 
@@ -43,22 +56,14 @@ function sumOfPriceFun(arrayOfPrices) {
   return sumOfPrices;
 }
 
-let variableOfAllPrice = sumOfPriceFun(arrayOfPrice);//*all sum**/
+let variableOfAllPrice = sumOfPriceFun(arrayOfPrice); //*all sum**/
 totalPriceId.innerHTML = `<p>Total Price:<span>${variableOfAllPrice}</span></p>`;
 
-
-
-
-
-function spliceFromArray(cartID, number,price){
-
-cartID.innerHTML = "";
-if(cartID.innerHTML == ""){
-      arrayOfCartObject.splice(number,1);
-      variableOfAllPrice -= price;
-      totalPriceId.innerHTML = `<p>Total Price:<span>${variableOfAllPrice}</span></p>`;
-
+function spliceFromArray(cartID, number, price) {
+  cartID.innerHTML = "";
+  if (cartID.innerHTML == "") {
+    arrayOfCartObject.splice(number, 1);
+    variableOfAllPrice -= price;
+    totalPriceId.innerHTML = `<p>Total Price:<span>${variableOfAllPrice}</span></p>`;
+  }
 }
-}
-
-
