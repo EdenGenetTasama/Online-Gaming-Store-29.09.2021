@@ -4,8 +4,6 @@ let arrayOfCartObject = [
       {id: allDateItem[2].id, img: allDateItem[2].img[2], name:allDateItem[2].name , price:allDateItem[2].price, }
 
 ]
-console.log(arrayOfCartObject);
-console.log(arrayOfCartObject[0].id);
 
 
 firstTR.innerHTML = `
@@ -50,9 +48,6 @@ totalPriceId.innerHTML = `<p>Total Price:<span>${variableOfAllPrice}</span></p>`
 
 
 
-
-
-/**********************************FOR TOMORROW STUCK HERE  ***********************/
 
 
 function spliceFromArray(cartID, number,price){
