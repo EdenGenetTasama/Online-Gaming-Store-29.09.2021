@@ -15,10 +15,10 @@ function sortedProductsFun(htmlElement , arrayOfItems , selectCategory) {
         class="item"
         id=${arrayOfItems[i].id}>
         <img src=${arrayOfItems[i].img[counterImg]} id="designImgInside"></n>
-        <h4>Name: </h4>${arrayOfItems[i].name} 
-        <h5>Description: ${arrayOfItems[i].description}</h5>
-        Price:${arrayOfItems[i].price}<br>
-        <button type="button" id="addButton" onclick="addToCart(${arrayOfItems[i].id})">ADD</button>
+        <h4 class="insideTextDesign"  id="priceStyle">${arrayOfItems[i].name}  </h4>
+        <h5 class="insideTextDesign">Description: ${arrayOfItems[i].description}</h5>
+        <span class="insideTextDesign" id="priceStyle">Price:${arrayOfItems[i].price}<br><br></span>
+        <button type="button" id="addButton" onclick="addToCart(${arrayOfItems[i].id})">ADD TO CART</button>
         </article>`;
 
         // counterImg++

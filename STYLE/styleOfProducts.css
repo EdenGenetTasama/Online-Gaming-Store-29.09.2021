@@ -12,10 +12,11 @@
 }
 
 .item{
-    width: 350px;
-    height: 400px;
-    border: 2px solid blue;
+    width: 400px;
+    height: 460px;
+    /* border: 2px solid blue; */
     padding: 3% !important;
+
 }
 
 #itemsContainer{
@@ -27,8 +28,8 @@
 }
 
 #designImgInside{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
 }
 
 @media screen and (max-device-width:440px){
@@ -53,4 +54,33 @@
         width: 100vw;
         
     }
+}
+
+#addButton{
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    font-family: 'Alfa Slab One', cursive;
+font-family: 'Luckiest Guy', cursive;
+
+}
+
+#addButton:hover{
+    transition: ease-in-out;
+    font-weight: bold;
+    font-size: 22px;
+
+}
+
+.insideTextDesign{
+    background-color: white ;
+    width: auto;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 14px;
+
+    
+}
+
+#priceStyle{
+    font-size: 22px;
 }
