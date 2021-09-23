@@ -16,7 +16,7 @@ function sortedProductsFun(htmlElement , arrayOfItems , selectCategory) {
         id=${arrayOfItems[i].id}>
         <img src=${arrayOfItems[i].img[counterImg]} id="designImgInside"></n>
         <h4 class="insideTextDesign"  id="priceStyle">${arrayOfItems[i].name}  </h4>
-        <h5 class="insideTextDesign">Description: ${arrayOfItems[i].description}</h5>
+        <h5 class="insideTextDesign">${arrayOfItems[i].description}</h5>
         <span class="insideTextDesign" id="priceStyle">Price:${arrayOfItems[i].price}<br><br></span>
         <button type="button" id="addButton" onclick="addToCart(${arrayOfItems[i].id})">ADD TO CART</button>
         </article>`;

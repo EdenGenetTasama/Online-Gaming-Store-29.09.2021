@@ -130,15 +130,15 @@ li.slider {
 
 .card{
 padding: 1%;
-width: 300px;
-height: 300px;
+width: 280px;
+height: 280px;
 }
 
 .card:hover{
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
 border-bottom: 5px solid crimson;
-height: 320px;
+height: 285px;
 }
 
 .buttonOfShowAllItem{
@@ -195,9 +195,8 @@ height: 320px;
         font-size: 12px;
     }
     .card {
-        animation-play-state: paused !important;
-        width: 100vw;
-        height: 40vh;
+        width: 50px;
+        height: 50px;
       
         
     }
