@@ -78,6 +78,7 @@ function spliceFromArray(cartID, number, price) {
   cartID.innerHTML = "";
   if (cartID.innerHTML == "") {
     arrayOfCartObject.splice(number, 1);
+    console.log(arrayOfCartObject);
     variableOfAllPrice -= price;
     totalPriceId.innerHTML = `<p class="totalPriceStyle">Total  Price:    <span>${variableOfAllPrice} $</span></p>`;
   }

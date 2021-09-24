@@ -44,6 +44,10 @@
     }
 .welcomeHeader{
     font-size: 35px;
+}
+h1{
+    font-size:20px;
+
 }}
 
 @media screen and (max-device-width:1040px){
