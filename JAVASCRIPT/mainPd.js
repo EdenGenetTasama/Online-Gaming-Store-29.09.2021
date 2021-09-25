@@ -1,7 +1,6 @@
 const categoryInput = document.getElementById("categoryInput");
 const itemsContainer = document.getElementById("itemsContainer");
 
-// const userValue = categoryInput.value;
 
 let counterImg = 0;
 
@@ -21,26 +20,14 @@ function sortedProductsFun(htmlElement, arrayOfItems, selectCategory) {
 
     }
 }
-counterImg++
   }
-// }
-
-
-
-// function switchingImg(img){
-//     let div =`<div></div>`
-//         for (let j = 0; j < 2; j++) {
-//             div.innerHTML = `<img src=${arrayOfItems[i].img[j]} id="designImgInside">`
-
-//         }
-
-// }
 
 let emptyArray = [];
 function addToCart(idOfItem) {
   for (let i = 0; i < allDateItem.length; i++) {
     if (allDateItem[i].id == idOfItem) {
       emptyArray.push(allDateItem[i]);
+      alert("Product added successfully")
       console.log(emptyArray);
     }
   }
