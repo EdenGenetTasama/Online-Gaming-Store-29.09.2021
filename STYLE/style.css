@@ -28,6 +28,7 @@ h1 {
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.2);
     font-weight: bold;
+    font-family: 'Fredoka One', cursive;
 }
 
 .menu {
@@ -107,7 +108,8 @@ li.slider {
 }
 
 #AvailableNow {
-    font-size: 25px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 45px;
     color: white;
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.3);
@@ -206,10 +208,12 @@ height: 285px;
 }
 
 #underImgHeader{
-    font-size: 45px;
+    font-size: 55px;
     color: white;
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.2);
+    font-family: 'Fredoka One', cursive;
+
 }
 
 .footer {
