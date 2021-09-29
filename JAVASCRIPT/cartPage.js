@@ -48,7 +48,7 @@ thirdTR.innerHTML = `
 `;
 
 forthTR.innerHTML = `
-<td><button type="button" class="buttonRemove" onclick="spliceFromArray(thirdTR,2,${arrayOfCartObject[3].price})">REMOVE</button></td>
+<td><button type="button" class="buttonRemove" onclick="spliceFromArray(forthTR,3,${arrayOfCartObject[3].price})">REMOVE</button></td>
 <td><img src=${arrayOfCartObject[3].img}  id="imgFour"></td>
 <td class="designTable">${arrayOfCartObject[3].name}</td>
 <td id="priceFour" class="designTable">${arrayOfCartObject[3].price}</td>
